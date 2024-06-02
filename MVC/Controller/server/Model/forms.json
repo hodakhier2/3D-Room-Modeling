@@ -1,0 +1,98 @@
+{
+   "Login": { 
+        "pageId":6,
+        "pageName":"/Login",
+        "title":"Login",
+        "text1":"Welcome to Interior Aesthetic",
+        "registerTxt":"Register",
+        "filelds":
+        [
+            {
+                "className":"inputFieldL",
+                "type":"text",
+                "name":"Username",
+                "placeholder":"Username.."
+            },
+
+            {
+                "className":"inputFieldL",
+                "type":"text",
+                "name":"password",
+                "placeholder":"Password.."
+            }],
+        "button1txt":"Log in",
+        "button2txt":"Login with Google",
+        "secondWay2Login":"Another way to log in"
+    },
+    "Register":
+    {
+        "pageId":7,
+        "pageName":"/Register",
+        "title":"Register",
+        "header1":"Welcome to Interior Aesthetic",
+        "filelds":
+        [
+            {
+                "name":"Fname",
+                "className":"inputFieldR",
+                "type":"text",
+                "placeholder":"First name"
+            },
+
+            {
+                "className":"inputFieldR",
+                "type":"text",
+                "name":"Lname",
+                "placeholder":"Last name"
+            },
+            {
+                "className":"inputFieldR",
+                "type":"tel",
+                "name":"phone",
+                "placeholder":"Phone number"
+            },
+
+            {
+                "className":"inputFieldR",
+                "type":"email",
+                "name":"email",
+                "placeholder":"email"
+            }
+            ],
+            "password":[
+                {
+                    "className":"passFields",
+                    "type":"password",
+                    "name":"password1",
+                    "placeholder":"Password"
+                },
+    
+                {
+                    "className":"passFields",
+                    "type":"password",
+                    "name":"password2",
+                    "placeholder":"Re-enter password"
+                }
+
+            ],
+        "button1txt":"Register",
+        "button2txt":"Register with Google",
+        "secondWay2Register":"Another way to register"
+    },
+    "ContactUs":
+    {
+        "pageId":3,
+        "pageName":"/ContactUs",
+        "title":"Contact Us",
+        "formId" :1,
+        "titleCU":"Fill in your information here, and we will be happy to assist you",
+        "inputs":
+        [
+            {"type":"text", "name":"FullName" ,"className":"inputFieldCU", "placeholder":"Full name"},
+            {"type":"tel", "name":"phone", "className":"inputFieldCU", "placeholder":"Phone number"},
+            {"type":"email", "name":"phone", "className":"inputFieldCU", "placeholder":"email"}
+        ],
+        "text2CU":"Describe the issue",
+        "sendText":"Send"
+    }
+}

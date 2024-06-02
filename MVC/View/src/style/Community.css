@@ -1,0 +1,81 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#CommunityContent{
+    height: auto;
+}
+
+#head{
+    width: 100%;
+    height: 150px;
+}
+
+#communityHeaderTxt{
+    text-align: center;
+    margin: auto;
+    font-size: 55px;
+    width: 100%;
+    height: inherit;
+    background-image: url(../media/wood\ bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 30px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+#communityContainer{ 
+    margin: auto;
+    margin-top: 30px;
+    /*height: 100%;*/
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+   
+}
+
+.postC{
+    margin: auto;
+    width: 300px;
+    height: 170px;
+    border: 1px solid black;
+    margin-top: 30px;
+}
+
+.posterName{
+    font-size: 15px;
+    height: fit-content;
+    width: fit-content;
+    margin-top: 50px;
+    color: blue;
+}
+
+#heart, #arrow{
+    height: 20px;
+    width: 20px;
+}
+
+#heart{
+    margin-left: 15px;
+}
+
+#likesNum{
+    margin-left: 5px;
+}
+
+#arrow{
+   
+    margin-left: 200px;
+}
+
+#likesAndShares{
+    align-items: center;
+    padding: 2px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    border: 1px solid black;
+    height: fit-content;
+}

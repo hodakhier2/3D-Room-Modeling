@@ -1,0 +1,155 @@
+*{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  height: 101%;
+}
+#contentS{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+#leftS{
+    float: left;
+    width: 70%;
+    display: grid;
+    height: inherit;
+}
+
+#rightS{
+    width: 250px;
+    height: 100%;
+    float: right;
+    display: grid;
+    border: 1px solid rgba(0, 0, 0, 0.395);
+    justify-items: center;
+    padding: 15px;
+}
+
+.threeD{
+    display: block;
+    /*border: 1px solid rgba(0, 0, 0, 0.395);*/
+    width: 60rem;
+    height: 29rem;
+    justify-content: center;
+    padding: 40px;
+}
+
+#selection{
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.395);
+    height: 40px;
+    width: 180px;
+    border-radius: 10px;
+}
+
+.containerS{
+  width: 200px;
+  height: auto;
+}
+
+.itm{
+    border: 1px solid rgba(0, 0, 0, 0.395);
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 10px;
+    font-size: 13px;
+    border-radius: 10px;
+}
+
+.pairS{
+    margin-top: 7px;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding-left: 1rem;
+}
+
+.uploadButton{
+    width: 100px;
+    height: 35px;
+    border: 1px solid rgba(0, 0, 0, 0.395);
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    color: #FFFFFF;
+    background-color: #0FC970;
+}
+
+
+  .secondLine{
+    bottom: 130px;
+    width:inherit;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+  }
+
+  .itemPreviewTxt{
+    position: relative;
+    height: fit-content;
+    bottom: -10px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 100;
+  }
+
+  .preview{
+    margin: 0;
+    position: relative;
+    width: 200px;
+    height: 120px;
+    background-color: rgba(116, 125, 123, 0.196);
+    /*bottom: -10px;*/
+  }
+
+  .temname{
+    margin: auto;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 100;
+    margin-left: 400px;
+  }
+
+  .measures{
+    display: block;
+    position: relative;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 100;
+    /*padding: 10px;
+    margin-bottom: 7rem;*/
+  }
+  #ContainsSer{
+    display: flex;
+  }
+  #saving, #posting{
+    width: 75px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.395);
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    color: #FFFFFF;
+    background-color: #0FC970;
+    display: block;
+  }
+
+  #posting{
+    margin-left: 15px;
+  }
+
+  #sp{
+    display: flex;
+    height: fit-content;
+    margin-left: 780px;
+  }
+
+  
+  @media only screen and (min-width: 600px) {}

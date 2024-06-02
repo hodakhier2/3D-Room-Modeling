@@ -1,0 +1,76 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+    #contentL{
+        align-items: center;
+        height: auto;
+    }
+
+    .titleL, #titleL{
+        font-size: 40px;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    #titleL{
+        font-size: 15px;
+        margin: auto;
+        margin-top: 5rem;
+    }
+
+    #containerL{
+        border: 1px solid rgba(0, 0, 0, 0.395);
+        width: 40%;
+        align-items: center;
+        justify-content: center;
+        justify-items: center; 
+        margin:auto;
+        margin-top: 1.5rem;
+        margin-bottom: 5rem;
+        padding-top: 2rem;
+    }
+
+    #formL{
+        display: grid;
+        width: 50%;
+        align-items: center;
+        margin: auto;
+    }
+
+    .inputFieldL{
+        height: 40px;
+        width: 250px;
+        margin: auto;
+        margin-top: 5px;
+        margin-bottom: 7px;
+       border: 1px solid rgba(0, 0, 0, 0.395);
+    }
+
+    #loginL, #googleLogin{
+        margin: auto;
+        margin-top: 5px;
+        justify-content: center;
+        background-color: #0FC970;
+        opacity: 85%;
+        color: #FFFFFF;
+        font-size: 15px;
+        width: 140px;
+        height: 40px;
+        border: 1px solid rgba(0, 0, 0, 0.395);
+        border-radius: 60px;
+    }
+
+    #googleLogin{
+        width: 250px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
+
+    .registerLink{
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 40px;
+    }
+
+@media only screen and (min-width: 600px) {}

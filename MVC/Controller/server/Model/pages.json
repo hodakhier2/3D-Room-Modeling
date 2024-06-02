@@ -1,0 +1,34 @@
+{
+    "Home":
+{
+    "pageId":1,
+    "pageName":"/Home",
+    "title":"Home",
+    "url": "../pages/Home.js" ,
+    "txt1":"Transform your space into a masterpiece!",
+    "txt2":"Discover the art of possibility with our cutting-edge 3D room modeling",
+    "buttonTxt":"Start a project"
+},
+    "About":
+    {
+        "pageId":2,
+        "pageName":"/About Us",
+        "title":"About Us",
+        "url": "../pages/About.js",
+        "title1":"Welcome to a new dimension of interior design",
+        "title2":"where your imagination leads the way !",
+        "txt1":"Our innovative 3D room modeling platform empowers you to craft the perfect living spaces tailored exactly to your preferences and lifestyle.",
+        "txtMid":"Simply provide your room measurements and choose from a diverse range of furniture,design your walls, doors, and windows just as you envision them.",
+        "txt2":"Not sure how a piece of furniture will look in your room? Simply upload a picture of the item, and place it in your virtual room to see how it complements your design.",
+        "buttonTxt":"Start now"
+    },
+    "Community":
+    {
+        "pageId":4,
+        "pageName":"/Community",
+        "title":"Community",
+        "url": "../pages/Community.js" 
+    }
+    
+    
+}
