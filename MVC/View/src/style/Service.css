@@ -1,6 +1,6 @@
+@media only screen and (min-width: 600px) {
 *{
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  height: 101%;
 }
 #contentS{
     display: block;
@@ -22,16 +22,18 @@
     display: grid;
     border: 1px solid rgba(0, 0, 0, 0.395);
     justify-items: center;
+    align-items: center;
     padding: 15px;
+    
 }
 
 .threeD{
     display: block;
-    /*border: 1px solid rgba(0, 0, 0, 0.395);*/
     width: 60rem;
     height: 29rem;
     justify-content: center;
     padding: 40px;
+    padding-top: 0;
 }
 
 #selection{
@@ -43,31 +45,19 @@
 }
 
 .containerS{
-  width: 200px;
-  height: auto;
+  display: block;
+  margin-top: 1rem;
+  width: 230px;  
+  height: 450px;
 }
 
 .itm{
     border: 1px solid rgba(0, 0, 0, 0.395);
-    width: 80px;
-    height: 40px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    margin: 5px 10px;
-    font-size: 13px;
-    border-radius: 10px;
+    width:200px;
+    height: 150px;
 }
-
 .pairS{
-    margin-top: 7px;
-    display: grid;
-    grid-template-columns: auto auto;
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-    padding-left: 1rem;
+  overflow-y: auto;
 }
 
 .uploadButton{
@@ -78,7 +68,7 @@
     margin-top: 10px;
     font-size: 15px;
     color: #FFFFFF;
-    background-color: #0FC970;
+    background-color: #FFAB91;
 }
 
 
@@ -111,7 +101,9 @@
 
   .temname{
     margin: auto;
+    margin-bottom: 0;
     padding: 20px;
+    padding-bottom: 0;
     font-size: 18px;
     font-weight: 100;
     margin-left: 400px;
@@ -128,6 +120,8 @@
   }
   #ContainsSer{
     display: flex;
+    height: fit-content;
+    margin-bottom: 0;
   }
   #saving, #posting{
     width: 75px;
@@ -137,8 +131,9 @@
     margin-top: 10px;
     font-size: 15px;
     color: #FFFFFF;
-    background-color: #0FC970;
+    background-color: #FFAB91;
     display: block;
+    margin-bottom: 0;
   }
 
   #posting{
@@ -152,4 +147,4 @@
   }
 
   
-  @media only screen and (min-width: 600px) {}
+  }

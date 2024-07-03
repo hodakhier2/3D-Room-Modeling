@@ -1,67 +1,84 @@
 import {Component} from "react";
 import '../style/Service.css';
-import Room from "./Room";
+import RoomContainer from "./RoomContainer";
+import SketchfabModels from "./SketchfabModels";
 
 
 export default class Service extends Component 
 {
-    constructor(props) {
-        super(props);
-        this.state = {
-          data: ""
-        };
+  constructor(props) {
+    super(props);
+    this.state = {
+      page: null,
+      error: null
+    };
+  }
+  componentDidMount() {
+    const pageId = 5;
+
+    console.log('Fetching page data...');
+
+    fetch(`http://localhost:3001/pages/${pageId}`, {
+        method: "POST",
+        headers: {
+            'Content-Type': 'application/json'
+            }
+        })
+    .then(response => {
+      if (!response.ok) {
+          throw new Error('Network response was not ok');
       }
-      componentDidMount() {
-        fetch("http://localhost:3001/data/Service")
-          .then((res) => res.json())
-          .then((data) => this.setState({ data: data }))
-          .catch((err) => {
-            console.log("Error occurred", err);
-          });
-      }
-    render()
-        {
-            const { data } = this.state;
-            const myOptions  = data.options;
-            const itemsArray = data.itemPairs;
-    
-        if (!data) {
-          return <div>Loading...</div>; }
-            
-            return( 
-                <div id="contentS">
-                    <div id="leftS">
-                        <div id="ContainsSer">
-                        <p class="temname">{data.TemplateName}</p>
-                        
-                        
-                        <button id="saving">{data.savingButton}</button>
-                        <button id="posting">{data.publishButton}</button>
-                        </div>
-                        
-                        <div class="threeD">{Room(2,5,6)}</div>
-                        <h6 class="measures">{data.measures}</h6>
-                    </div>
+      return response.json();
+  })
+  .then(data => {
+      // Parse the pageContent field
+      data.pageContent = JSON.parse(data.pageContent);
+      this.setState({ page: data });
+  })
+  .catch(error => {
+      this.setState({ error });
+      console.error('There was a problem with the fetch operation:', error);
+  });
+}
+render() { 
+  const { page, error } = this.state;
+
+  if (error) {
+      return <div>Error: {error.message}</div>;
+  }
+
+  if (!page) {
+      return <div>Loading...</div>;
+  }
+
+    return( 
+        <div id="contentS">
+            <div id="leftS">
+                <div id="ContainsSer">
+                    <p class="temname">{page.pageContent.TemplateName}</p>
+                    <button id="saving">{page.pageContent.savingButton}</button>
+                    <button id="posting">{page.pageContent.publishButton}</button>
+                </div>     
+            <div class="threeD"><RoomContainer></RoomContainer></div>
+        </div>
         
-                    <div id="rightS">
-                        <select id="selection">
-                        {myOptions.map((item) =>(
-                        <option value={item.value}>{item.name}</option>))}
-                        </select>
+        <div id="rightS">
+            <select id="selection">
+            {page.pageContent.options.map((item) =>(
+            <option value={item.value}>{item.name}</option>))}
+            </select>
                     
-                        <div class="containerS">
-                            <div class="pairS">
-                            {itemsArray.map((item) =>(
-                            <p class="itm">{item.name}</p>))}
-                            </div>
-                        </div>
-                    
-                        <button class="uploadButton">{data.uploadButtonTxt}</button>
-                        <hr class="secondLine"></hr>
-                        <p class="itemPreviewTxt">{data.itemPreviewTxt}</p>
-                        <div class="preview"></div>
-                    </div>
+            <div class="containerS">
+                <div class="pairS">
+                    <div className="itm"><SketchfabModels></SketchfabModels></div>
                 </div>
+            </div>
+        </div>
+        </div>
             );
         }
 }
+///<button class="uploadButton">{page.pageContent.uploadButtonTxt}</button>
+/*  <hr class="secondLine"></hr>
+                        <p class="itemPreviewTxt">{page.pageContent.itemPreviewTxt}</p>
+                        <div class="preview"></div>*/

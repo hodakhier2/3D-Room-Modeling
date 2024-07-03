@@ -1,7 +1,7 @@
 import {Component} from "react";
 import './Header.css';
 import data from "./headerFooter.json";
-import logo from "../media/two.png";
+import logo from "../media/logo.png";
 import {Link } from "react-router-dom";
 import React from 'react';
 

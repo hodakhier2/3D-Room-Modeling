@@ -13,7 +13,15 @@ export default class Community extends Component
         };
       }
       componentDidMount() {
-        fetch("http://localhost:3001/data/Community")
+        const pageId = 4;
+        console.log('Fetching page data...');
+
+        fetch(`http://localhost:3001/pages/${pageId}`, {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
           .then((res) => res.json())
           .then((data) => this.setState({ data: data}))
           .catch((err) => {

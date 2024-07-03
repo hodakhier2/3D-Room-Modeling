@@ -9,29 +9,54 @@ export default class Home extends Component
     constructor(props) {
         super(props);
         this.state = {
-          data: ""
+          page: null,
+          error: null
         };
       }
       componentDidMount() {
-        fetch("http://localhost:3001/data/Home")
-          .then((res) => res.json())
-          .then((data) => this.setState({ data: data }))
-          .catch((err) => {
-            console.log("Error occurred", err);
-          });
-      }
-    render() { 
-        const { data } = this.state;
-        //const homeData = data["Home"];
+        const pageId = 1;
+        console.log('Fetching page data...');
 
-    if (!data) {
-      return <div>Loading...</div>; }
+        fetch(`http://localhost:3001/pages/${pageId}`, {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => {
+          if (!response.ok) {
+              throw new Error('Network response was not ok');
+          }
+          return response.json();
+      })
+      .then(data => {
+        console.log('Page data received:', data);
+          // Parse the pageContent field
+          data.pageContent = JSON.parse(data.pageContent);
+          this.setState({ page: data });
+      })
+      .catch(error => {
+          this.setState({ error });
+          console.error('There was a problem with the fetch operation:', error);
+      });
+}
+    render() { 
+      const { page, error } = this.state;
+
+      if (error) {
+          return <div>Error: {error.message}</div>;
+      }
+
+      if (!page) {
+          return <div>Loading...</div>;
+      }
+
         return(
             <div id="contentH">
                 <div id="leftH">
-                    <p id="txt1">{data.txt1}</p>
-                    <p id="txt2">{data.txt2}</p>
-                    <Link to="/Service"><button id="HomeB">{data.buttonTxt}</button></Link>
+                    <p id="txt1">{page.pageContent.txt1}</p>
+                    <p id="txt2">{page.pageContent.txt2}</p>
+                    <Link to="/Service"><button id="HomeB">{page.pageContent.buttonTxt}</button></Link>
                 </div>
                 <div id="rightH">
                     <img src={image}></img>
