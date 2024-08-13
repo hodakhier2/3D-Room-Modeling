@@ -30,7 +30,7 @@
     justify-items: center; 
     margin: auto;
     margin-bottom: 5rem;
-    padding-top: 2rem;
+    padding: 2rem;
 }
 
 #formR{
@@ -64,7 +64,7 @@
     margin: auto;
     display: block;
     position: relative;
-    margin-top: 25px;
+    margin-top: 5rem;
     justify-self: center;
     background-color: #FFAB91;
     opacity: 85%;
@@ -74,6 +74,7 @@
     height: 40px;
     border: 1px solid rgba(0, 0, 0, 0.395);
     border-radius: 60px;
+    cursor: pointer;
 }
 
 #googleRegisterR{

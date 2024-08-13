@@ -1,129 +1,118 @@
 @media only screen and (min-width: 600px) {
-*{
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-#contentS{
-    display: block;
+
+  #contentS {
+    /*min-height: calc(100vh - 10px); /* Adjust to the height of your header and footer */
+    display: flex;
+    height: auto;
+    flex-direction: row;
     margin: 0;
     padding: 0;
-}
-
-#leftS{
-    float: left;
-    width: 70%;
-    display: grid;
-    height: inherit;
-}
-
-#rightS{
-    width: 250px;
-    height: 100%;
-    float: right;
+  }
+  #rightS {
+    flex: 0 0 250px;
     display: grid;
     border: 1px solid rgba(0, 0, 0, 0.395);
     justify-items: center;
     align-items: center;
-    padding: 15px;
-    
-}
+    padding: 10px; 
+    height: inherit;
+  }
 
-.threeD{
-    display: block;
+  #leftS {
+    flex: 1;
+    display: grid;
+    justify-content: center;
+  }
+  
+  
+  
+  .threeD {
+    margin: 0;
     width: 60rem;
     height: 29rem;
+    display: block;
     justify-content: center;
-    padding: 40px;
+    margin-bottom: 2rem;
+    padding: 20px;
     padding-top: 0;
-}
-
-#selection{
+  }
+  
+  #selection {
     text-align: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.395);
     height: 40px;
     width: 180px;
     border-radius: 10px;
-}
-
-.containerS{
-  display: block;
-  margin-top: 1rem;
-  width: 230px;  
-  height: 450px;
-}
-
-.itm{
-    border: 1px solid rgba(0, 0, 0, 0.395);
-    width:200px;
-    height: 150px;
-}
-.pairS{
-  overflow-y: auto;
-}
-
-.uploadButton{
-    width: 100px;
-    height: 35px;
-    border: 1px solid rgba(0, 0, 0, 0.395);
-    border-radius: 10px;
-    margin-top: 10px;
-    font-size: 15px;
-    color: #FFFFFF;
-    background-color: #FFAB91;
-}
-
-
-  .secondLine{
-    bottom: 130px;
-    width:inherit;
-    height: 0;
-    padding: 0;
-    margin: 0;
-    position: absolute;
   }
-
-  .itemPreviewTxt{
-    position: relative;
+  
+  .containerS {
+    overflow-y: auto;
+    display: grid;
+    margin: auto;
+    margin-top: 1rem;
+    width: 230px;
+   
+  }
+  
+  .itm {
+    border: 1px solid rgba(0, 0, 0, 0.395);
+    width: 150px;
+    height: 150px;
+  }
+  
+  .pairS {
+    overflow-y: auto;
+    height: 300px;
+    margin: auto;
+  }
+  
+  .itemPreviewTxt {
     height: fit-content;
-    bottom: -10px;
-    margin-bottom: 0;
+    display: block;
+    text-align: center;
+    margin: 0.7rem;
     font-size: 14px;
     font-weight: 100;
   }
-
-  .preview{
-    margin: 0;
-    position: relative;
-    width: 200px;
-    height: 120px;
-    background-color: rgba(116, 125, 123, 0.196);
-    /*bottom: -10px;*/
-  }
-
-  .temname{
+  
+  .preview {
+    display: block;
     margin: auto;
-    margin-bottom: 0;
+    width: 200px;
+    height: 170px;
+    background-color: rgba(116, 125, 123, 0.196);
+  }
+  
+  .templateNameContainer{
+    display: block;
+    margin: auto;
+    position: relative;
+  }
+  .temname {
+    margin: auto;
+    margin-bottom: 1rem;
     padding: 20px;
     padding-bottom: 0;
     font-size: 18px;
     font-weight: 100;
-    margin-left: 400px;
+    cursor: pointer;
   }
-
-  .measures{
+  
+  .measures {
     display: block;
     position: relative;
     text-align: center;
     font-size: 12px;
     font-weight: 100;
-    /*padding: 10px;
-    margin-bottom: 7rem;*/
   }
-  #ContainsSer{
+  
+  #ContainsSer {
     display: flex;
     height: fit-content;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
   }
-  #saving, #posting{
+  
+  #saving, #posting {
     width: 75px;
     height: 30px;
     border: 1px solid rgba(0, 0, 0, 0.395);
@@ -134,17 +123,12 @@
     background-color: #FFAB91;
     display: block;
     margin-bottom: 0;
+    cursor: pointer;
   }
-
-  #posting{
+  
+  #posting {
     margin-left: 15px;
   }
-
-  #sp{
-    display: flex;
-    height: fit-content;
-    margin-left: 780px;
-  }
-
   
   }
+  

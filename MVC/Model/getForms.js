@@ -33,6 +33,7 @@ function getForm(formId){
         }
         console.log("Success",results);
         resolve(form);
+        //return form;
     }}
   });})}
 

@@ -59,12 +59,16 @@
         height: 40px;
         border: 1px solid rgba(0, 0, 0, 0.395);
         border-radius: 60px;
+        cursor: pointer;
     }
 
     #googleLogin{
         width: 250px;
         margin-top: 10px;
         margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
 
@@ -72,5 +76,12 @@
         text-align: center;
         font-size: 15px;
         margin-bottom: 40px;
+    }
+
+    .googleIcon{
+        width: 25px;
+        height: 25px;
+        background: none;
+        margin-left: 10px;
     }
 }

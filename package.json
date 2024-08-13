@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "dropbox": "^10.34.0",
+    "firebase": "^10.12.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}

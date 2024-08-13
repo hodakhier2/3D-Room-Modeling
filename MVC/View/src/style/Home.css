@@ -54,5 +54,6 @@ img{
     margin-left: 2rem;
     border: 1px solid rgba(0, 0, 0, 0.395);
     border-radius: 60px;
+    cursor: pointer;
 }
 }

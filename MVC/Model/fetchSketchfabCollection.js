@@ -9,7 +9,7 @@ const fetchCollectionModels = (collectionId) => {
       path: `/v3/collections/${collectionId}/models`,
       method: 'GET',
       headers: {
-        Authorization: `Bearer ${SKETCHFAB_API_TOKEN}`
+      Authorization: `Bearer ${SKETCHFAB_API_TOKEN}`
       }
     };
 
@@ -38,4 +38,6 @@ const fetchCollectionModels = (collectionId) => {
   });
 };
 
-module.exports = { fetchCollectionModels };
+
+
+module.exports = { fetchCollectionModels};

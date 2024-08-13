@@ -1,0 +1,29 @@
+{
+    "roomdata":
+    {
+        "height" : null,
+        "width" : null, 
+        "depth": null,
+        "backWall" : "",
+        "leftWall" : "",
+        "rightWall" : "",
+        "floor" : "",
+        "userId" : null,
+        "roomId": null
+    },
+    "3dModels":
+    [
+        {
+            "itemId" : "",
+            "positionx" : null,
+            "positiony" : null,
+            "positionz" : null
+        },
+        {
+            "itemId" : "",
+            "positionx" : null,
+            "positiony" : null,
+            "positionz" : null
+        }
+    ]
+}

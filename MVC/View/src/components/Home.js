@@ -59,7 +59,7 @@ export default class Home extends Component
                     <Link to="/Service"><button id="HomeB">{page.pageContent.buttonTxt}</button></Link>
                 </div>
                 <div id="rightH">
-                    <img src={image}></img>
+                    <img src={image} alt="Home Design"></img>
                 </div>
             </div>
         );}

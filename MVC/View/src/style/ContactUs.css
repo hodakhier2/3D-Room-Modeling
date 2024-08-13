@@ -54,6 +54,7 @@
     border: 1px solid rgba(0, 0, 0, 0.395);
     border-radius: 60px;
     margin-bottom: 2rem;
+    cursor: pointer;
 }
 
 #descriptionCU{
